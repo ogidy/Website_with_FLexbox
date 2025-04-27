@@ -1,3 +1,15 @@
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .content-left {
+    width: 100%;
+    padding: 20px;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -35,9 +47,13 @@ li a::after {
   background: #c4c4f7;
   transition: all 0.5s;
 }
-
 li a:hover::after {
   width: 100%;
+}
+
+a:focus,
+button:focus {
+  outline: 2px solid #133b4f;
 }
 
 main {
@@ -49,7 +65,7 @@ main {
 
 .hero-img {
   max-width: 670px;
-  max-height: auto;
+  height: auto;
 }
 
 .content-left {
@@ -89,7 +105,7 @@ main p {
 }
 
 .signup {
-  padding: 10px 20px;
+  padding: 12px 24px;
   background: #c4c4f7;
   color: #fff;
   outline: none;
